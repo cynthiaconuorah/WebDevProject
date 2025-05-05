@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Analytics Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="quiz.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Web Analytics Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topic1.html">Importance of Web Analytics</a></li>
+                <li><a href="topic2.html">Key Metrics in Web Analytics</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="quizForm">
+            <!-- Question 1: Single Choice -->
+            <p>1. What is the purpose of web analytics?</p>
+            <label><input type="radio" name="q1" value="a"> To create websites</label><br>
+            <label><input type="radio" name="q1" value="b"> To analyze and optimize web performance</label><br>
+            <label><input type="radio" name="q1" value="c"> To write HTML</label><br>
+
+            <!-- Question 2: Single Choice -->
+            <p>2. Which of the following is NOT a key metric in web analytics?</p>
+            <label><input type="radio" name="q2" value="a"> Bounce Rate</label><br>
+            <label><input type="radio" name="q2" value="b"> Session Duration</label><br>
+            <label><input type="radio" name="q2" value="c"> Font Size</label><br>
+
+            <!-- Question 3: Single Choice -->
+            <p>3. What does a high bounce rate usually indicate?</p>
+            <label><input type="radio" name="q3" value="a"> Users are engaged</label><br>
+            <label><input type="radio" name="q3" value="b"> Users are leaving quickly</label><br>
+            <label><input type="radio" name="q3" value="c"> Users are sharing the site</label><br>
+
+            <!-- Question 4: Fill in the blank -->
+            <p>4. Fill in the blank: A ________ represents a group of user interactions with a website that take place within a given time frame.</p>
+            <input type="text" name="q4">
+
+            <!-- Question 5: Multiple Correct Choices -->
+            <p>5. Which of the following are common tools for web analytics? (Select all that apply)</p>
+            <label><input type="checkbox" name="q5" value="a"> Google Analytics</label><br>
+            <label><input type="checkbox" name="q5" value="b"> Adobe Analytics</label><br>
+            <label><input type="checkbox" name="q5" value="c"> Microsoft Word</label><br>
+            <label><input type="checkbox" name="q5" value="d"> Matomo</label><br>
+
+            <br>
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+            <button type="button" onclick="restartQuiz()">Restart</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Analytics Research</p>
+    </footer>
+</body>
+</html>
